@@ -1,0 +1,7 @@
+{
+  "name": "popover-arrow-bug",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
