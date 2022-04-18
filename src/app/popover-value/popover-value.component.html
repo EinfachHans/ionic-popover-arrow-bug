@@ -1,0 +1,14 @@
+<div *ngIf="auction.buyerPurchaseFee || auction.buyerSuccessFee" class="fee-info">
+  <span>zzgl. </span>
+  <span *ngIf="auction.buyerPurchaseFee">
+    <span>{{this.auction.buyerPurchaseFee}} € </span>
+    <span>Gebühr </span>
+    <span *ngIf="auction.buyerSuccessFee">+ </span>
+  </span>
+  <span *ngIf="auction.buyerSuccessFee">
+    <span>{{auction.buyerSuccessFee}} € </span>
+    <span>Aufgeld </span>
+  </span>
+  <span>(Netto)</span>
+</div>
+

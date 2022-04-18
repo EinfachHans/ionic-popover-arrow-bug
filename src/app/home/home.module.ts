@@ -5,6 +5,9 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
+import { PopoverComponent } from '../popover/popover.component';
+import { PopoverValueComponent } from '../popover-value/popover-value.component';
+import { PriceComponent } from '../price/price.component';
 
 
 @NgModule({
@@ -14,6 +17,6 @@ import { HomePageRoutingModule } from './home-routing.module';
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage]
+  declarations: [HomePage, PriceComponent, PopoverComponent, PopoverValueComponent]
 })
 export class HomePageModule {}
